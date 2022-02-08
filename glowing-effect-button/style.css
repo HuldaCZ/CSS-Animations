@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid white;
+  padding: 40px 80px;
+  position: relative;
+  overflow: hidden;
+  transform: all 0.3s;
+}
+
+a:hover {
+  background-color: #F44336;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    transform: translateX(-100%) rotate(45deg);
+    transition: all 0.3s;
+}
+
+a:hover::before {
+    transform: translateX(100%) rotate(45deg);
+}
+
