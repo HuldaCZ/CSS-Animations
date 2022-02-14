@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+}
+
+button {
+  border: none;
+  padding: 12px 40px;
+  background-color: #c47135;
+  color: white;
+  font-family: "BenchNine", sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid #c47135;
+  border-left: 2px solid #c47135;
+  transition: all 0.3s;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: -5px;
+  bottom: -5px;
+  border-right: 2px solid #c47135;
+  border-bottom: 2px solid #c47135;
+  transition: all 0.3s;
+}
